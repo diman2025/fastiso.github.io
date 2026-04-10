@@ -1,4 +1,5 @@
-/* css/style.css */
+/* css/style.css - Общий стиль для всего сайта */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,19 +10,19 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #f8f9fa;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 header {
     background: linear-gradient(135deg, #0078d4, #005a9e);
     color: white;
-    padding: 60px 20px;
+    padding: 70px 20px;
     text-align: center;
 }
 
 h1 {
     font-size: 2.8em;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .subtitle {
@@ -38,7 +39,7 @@ h1 {
 .main-nav {
     background: white;
     padding: 18px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
     margin-bottom: 40px;
 }
 
@@ -87,7 +88,7 @@ h1 {
 .download-btn {
     background: #28a745;
     color: white;
-    padding: 12px 28px;
+    padding: 13px 28px;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
@@ -101,10 +102,10 @@ h1 {
 
 .warning {
     background: #fff7ed;
-    padding: 20px;
+    padding: 22px;
     border-radius: 10px;
     border-left: 6px solid #f59e0b;
-    margin: 30px 0;
+    margin: 35px 0;
 }
 
 footer {
@@ -112,16 +113,16 @@ footer {
     color: #cbd5e1;
     text-align: center;
     padding: 50px 20px;
-    margin-top: 80px;
+    margin-top: 90px;
 }
 
-/* Адаптивность */
+/* Адаптив */
 @media (max-width: 768px) {
     .cards {
         grid-template-columns: 1fr;
     }
     .main-nav a {
         display: block;
-        margin: 10px 0;
+        margin: 12px 0;
     }
 }
