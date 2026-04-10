@@ -1,1 +1,127 @@
+/* css/style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #0078d4, #005a9e);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 1.4em;
+    opacity: 0.95;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-nav {
+    background: white;
+    padding: 18px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.main-nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #0078d4;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.main-nav a:hover {
+    color: #005a9e;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.18);
+}
+
+.card-header {
+    padding: 18px;
+    font-weight: bold;
+    background: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.download-btn {
+    background: #28a745;
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.download-btn:hover {
+    background: #218838;
+}
+
+.warning {
+    background: #fff7ed;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 6px solid #f59e0b;
+    margin: 30px 0;
+}
+
+footer {
+    background: #2d3748;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 80px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .main-nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
