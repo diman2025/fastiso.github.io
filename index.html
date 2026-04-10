@@ -3,109 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FastISO.ru - Зеркало официальных ISO-образов</title>
+    <title>FastISO.ru — Скачать официальные ISO Windows, Linux, Rescue-диски</title>
+    <meta name="description" content="Быстрое зеркало официальных ISO-образов Windows 11, Linux, российских ОС и rescue-дисков. Без вирусов, прямые ссылки.">
+    <meta name="keywords" content="скачать windows 11 iso, ubuntu iso, linux mint, astra linux, rescue disk, kaspersky rescue">
 
-    <meta name="description" content="Скачать ISO образы Windows, Linux и утилиты бесплатно. Быстрое зеркало официальных образов. Без вирусов.">
-    <meta name="keywords" content="скачать windows iso, linux iso, ubuntu скачать, windows 11 iso">
-    
     <style>
-        body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            margin: 0; padding: 0; 
-            background: #f8f9fa; 
-            color: #333; 
-            line-height: 1.6; 
-        }
-        header { 
-            background: linear-gradient(135deg, #0078d4, #005a9e); 
-            color: white; 
-            padding: 50px 20px; 
-            text-align: center; 
-        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #0078d4, #005a9e); color: white; padding: 50px 20px; text-align: center; }
         h1 { margin: 0 0 8px 0; font-size: 2.4em; }
         .subtitle { font-size: 1.25em; opacity: 0.95; }
         .container { max-width: 1200px; margin: 25px auto; padding: 0 15px; }
-        nav { 
-            background: white; 
-            padding: 15px; 
-            margin-bottom: 30px; 
-            border-radius: 10px; 
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08); 
-            text-align: center; 
-        }
-        nav a { 
-            margin: 0 15px; 
-            text-decoration: none; 
-            color: #0078d4; 
-            font-weight: 600; 
-            font-size: 1.05em; 
-        }
-        .ad-block { 
-            background: #f0f0f0; 
-            padding: 20px; 
-            margin: 30px 0; 
-            text-align: center; 
-            border: 2px dashed #ccc; 
-            border-radius: 10px; 
-            color: #666; 
-        }
+        nav { background: white; padding: 15px; margin-bottom: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: #0078d4; font-weight: 600; font-size: 1.05em; }
+        .ad-block { background: #f0f0f0; padding: 20px; margin: 30px 0; text-align: center; border: 2px dashed #ccc; border-radius: 10px; color: #666; }
         .section { margin: 50px 0; }
-        .section h2 { 
-            color: #0078d4; 
-            border-bottom: 3px solid #0078d4; 
-            padding-bottom: 10px; 
-        }
-        .cards { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
-            gap: 20px; 
-        }
-        .card { 
-            background: white; 
-            border-radius: 10px; 
-            overflow: hidden; 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
-            transition: transform 0.2s; 
-        }
+        .section h2 { color: #0078d4; border-bottom: 3px solid #0078d4; padding-bottom: 10px; }
+        .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s; }
         .card:hover { transform: translateY(-5px); }
-        .card-header { 
-            padding: 15px; 
-            font-weight: bold; 
-            background: #f8f9fa; 
-            border-bottom: 1px solid #eee; 
-        }
+        .card-header { padding: 15px; font-weight: bold; background: #f8f9fa; border-bottom: 1px solid #eee; }
         .card-body { padding: 15px; }
-        .download-btn { 
-            background: #28a745; 
-            color: white; 
-            padding: 10px 20px; 
-            text-decoration: none; 
-            border-radius: 6px; 
-            font-weight: bold; 
-            display: inline-block; 
-            margin-top: 10px; 
-        }
+        .download-btn { background: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block; margin-top: 10px; }
         .download-btn:hover { background: #218838; }
-        footer { 
-            background: #333; 
-            color: #ddd; 
-            text-align: center; 
-            padding: 35px 20px; 
-            margin-top: 60px; 
-        }
-        .warning { 
-            background: #fff3cd; 
-            padding: 18px; 
-            border-radius: 8px; 
-            border-left: 5px solid #ffc107; 
-            margin: 25px 0; 
-        }
+        footer { background: #333; color: #ddd; text-align: center; padding: 35px 20px; margin-top: 60px; }
+        .warning { background: #fff3cd; padding: 18px; border-radius: 8px; border-left: 5px solid #ffc107; margin: 25px 0; }
+        input#search { padding: 12px; width: 70%; max-width: 500px; border-radius: 8px; border: 1px solid #ccc; font-size: 1.05em; }
     </style>
 </head>
 <body>
     <header>
         <h1>FastISO.ru</h1>
-        <p class="subtitle">Быстрое зеркало официальных ISO-образов • ОС • Утилиты • Rescue-диски</p>
+        <p class="subtitle">Официальные ISO Windows • Linux • Российские ОС • Rescue-диски</p>
     </header>
 
     <div class="container">
@@ -116,33 +44,31 @@
             <a href="#rescue">Rescue & Recovery</a>
             <a href="#howto">Как записать</a>
         </nav>
-        
-        <div style="margin:20px 0; text-align:center;">
-            <input type="text" id="search" placeholder="Поиск ISO..." 
-            style="padding:10px; width:60%; max-width:400px; border-radius:8px; border:1px solid #ccc;">
+
+        <div style="text-align:center; margin:25px 0;">
+            <input type="text" id="search" placeholder="Поиск по названию ISO...">
         </div>
-        
-        <!-- Блок рекламы VK №1 -->
+
+        <!-- Реклама VK -->
         <div class="ad-block">
-            <!-- Вставь сюда код своего рекламного блока VK 240x400 -->
-            Рекламный блок VK (240x400)
+            Рекламный блок VK 240x400 (вставь код сюда)
         </div>
 
         <div id="windows" class="section">
             <h2>Windows</h2>
             <div class="cards">
                 <div class="card">
-                    <div class="card-header">Windows 11 25H2 (Русский)</div>
+                    <div class="card-header">Windows 11 25H2 Русский</div>
                     <div class="card-body">
-                        <p>Официальный образ Windows 11 25H2 на русском языке</p>
+                        <p>Официальный образ последней версии Windows 11</p>
                         <p><strong>Размер:</strong> ~7.6 ГБ</p>
                         <a href="https://cloud.mail.ru/public/Cm8D/rquinfsVb" class="download-btn" target="_blank">Скачать</a>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header">Windows 11 25H2 (English)</div>
+                    <div class="card-header">Windows 11 25H2 English</div>
                     <div class="card-body">
-                        <p>Официальный образ Windows 11 25H2 на английском</p>
+                        <p>Официальный образ Windows 11 на английском</p>
                         <p><strong>Размер:</strong> ~7.9 ГБ</p>
                         <a href="https://cloud.mail.ru/public/4gr3/buutA6SwG" class="download-btn" target="_blank">Скачать</a>
                     </div>
@@ -156,7 +82,7 @@
                 <div class="card">
                     <div class="card-header">Ubuntu 25.10 Desktop</div>
                     <div class="card-body">
-                        <p>Самый популярный дистрибутив для новичков</p>
+                        <p>Лучший выбор для новичков</p>
                         <p><strong>Размер:</strong> ~5.3 ГБ</p>
                         <a href="https://cloud.mail.ru/public/m8D6/ayPZVkDx6" class="download-btn" target="_blank">Скачать</a>
                     </div>
@@ -164,7 +90,7 @@
                 <div class="card">
                     <div class="card-header">Linux Mint 22.3 Cinnamon</div>
                     <div class="card-body">
-                        <p>Удобный дистрибутив с классическим интерфейсом</p>
+                        <p>Самый удобный для перехода с Windows</p>
                         <p><strong>Размер:</strong> ~2.9 ГБ</p>
                         <a href="https://cloud.mail.ru/public/rYLx/APgeYuvij" class="download-btn" target="_blank">Скачать</a>
                     </div>
@@ -172,7 +98,7 @@
                 <div class="card">
                     <div class="card-header">AlmaLinux 10.1</div>
                     <div class="card-body">
-                        <p>Свободная альтернатива Red Hat Enterprise Linux</p>
+                        <p>Альтернатива Red Hat / CentOS</p>
                         <p><strong>Размер:</strong> ~8.3 ГБ</p>
                         <a href="https://cloud.mail.ru/public/MGpB/sRH2h49hb" class="download-btn" target="_blank">Скачать</a>
                     </div>
@@ -181,12 +107,12 @@
         </div>
 
         <div id="russian" class="section">
-            <h2>Российские операционные системы</h2>
+            <h2>Российские ОС</h2>
             <div class="cards">
                 <div class="card">
                     <div class="card-header">Astra Linux Orel</div>
                     <div class="card-body">
-                        <p>Защищённая российская ОС</p>
+                        <p>Защищённая ОС для государственных структур</p>
                         <p><strong>Размер:</strong> ~5.2 ГБ</p>
                         <a href="https://cloud.mail.ru/public/b4Bk/sgxucVqjA" class="download-btn" target="_blank">Скачать</a>
                     </div>
@@ -203,12 +129,12 @@
         </div>
 
         <div id="rescue" class="section">
-            <h2>Rescue & Recovery (Инструменты восстановления)</h2>
+            <h2>Rescue & Recovery</h2>
             <div class="cards">
                 <div class="card">
                     <div class="card-header">Kaspersky Rescue Disk</div>
                     <div class="card-body">
-                        <p>Диск аварийного восстановления и удаление вредоносного ПО</p>
+                        <p>Официальный диск для лечения и восстановления компьютера</p>
                         <p><strong>Размер:</strong> ~0.5 ГБ</p>
                         <a href="https://cloud.mail.ru/public/u8ep/g135eR89k" class="download-btn" target="_blank">Скачать</a>
                     </div>
@@ -216,7 +142,7 @@
                 <div class="card">
                     <div class="card-header">Dr.Web LiveDisk</div>
                     <div class="card-body">
-                        <p>Антивирусное решение для восстановления системы, поврежденной вирусами или вредоносными программами</p>
+                        <p>Антивирусный Live-диск для удаления вирусов</p>
                         <p><strong>Размер:</strong> ~1 ГБ</p>
                         <a href="https://cloud.mail.ru/public/Dkkg/NYuFEL5Xe" class="download-btn" target="_blank">Скачать</a>
                     </div>
@@ -224,31 +150,29 @@
             </div>
         </div>
 
-        <!-- Блок рекламы VK №2 -->
         <div class="ad-block">
-            Рекламный блок VK (300x250)
+            Рекламный блок VK (второй)
         </div>
 
         <div id="howto" class="section">
             <h2>Как записать ISO на флешку</h2>
             <div class="warning">
-                <strong>Важно:</strong> Все образы на этом сайте - официальные и легальные. 
-                Мы только предоставляем удобные зеркала для быстрой загрузки.
+                <strong>Важно:</strong> Все файлы на сайте — официальные образы. Мы только зеркала.
             </div>
             <p>Рекомендуемые программы:</p>
             <ul>
-                <li><strong>Rufus</strong> - самая популярная для Windows</li>
-                <li><strong>Ventoy</strong> - можно записать много ISO на одну флешку</li>
-                <li><strong>balenaEtcher</strong> - простой и удобный</li>
+                <li><strong>Rufus</strong> — лучший выбор</li>
+                <li><strong>Ventoy</strong> — несколько ISO на одной флешке</li>
+                <li><strong>balenaEtcher</strong> — очень простой</li>
             </ul>
         </div>
     </div>
 
     <footer>
-        <p>FastISO.ru - личное зеркало официальных ISO-образов © 2026</p>
-        <p>Мы не продаём лицензии и не модифицируем файлы.</p>
+        <p>FastISO.ru — зеркало официальных ISO-образов © 2026</p>
+        <p>Мы не распространяем пиратский контент.</p>
     </footer>
-</body>
+
     <script>
     document.getElementById('search').addEventListener('input', function() {
         let val = this.value.toLowerCase();
@@ -257,4 +181,5 @@
         });
     });
     </script>
+</body>
 </html>
