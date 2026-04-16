@@ -126,3 +126,46 @@ footer {
         margin: 12px 0;
     }
 }
+
+/* Тёмная тема */
+.dark {
+    --bg: #0f172a;
+    --text: #e2e8f0;
+    --card-bg: #1e2937;
+    --header-bg: linear-gradient(135deg, #1e40af, #0f2a7a);
+}
+
+.dark body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.dark .card {
+    background: var(--card-bg);
+}
+
+.dark header {
+    background: var(--header-bg);
+}
+
+.dark .main-nav {
+    background: #1e2937;
+}
+
+/* Переключатель языка */
+.lang-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 6px 12px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    z-index: 1000;
+    display: flex;
+    gap: 6px;
+}
+
+.dark .lang-switch {
+    background: #334155;
+}
